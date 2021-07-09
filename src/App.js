@@ -1,14 +1,14 @@
 import React from 'react';
-import { Counter } from './features/counter/Counter';
-import { CounterA } from './features/counter/CounterA';
+import { Master } from './features/counter/Master';
+import { Detail } from './features/counter/Detail';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <Counter />
+      <Master />
       <hr />
-      <CounterA />
+      <Detail />
     </div>
   );
 }
