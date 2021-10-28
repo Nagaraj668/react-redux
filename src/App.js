@@ -4,6 +4,7 @@ import MasterClass from './features/counter/MasterClass';
 import DetailClass from './features/counter/DetailClass';
 
 function App() {
+  // simple change
   return (
     <div>
       <MasterClass />
