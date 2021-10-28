@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import {
-  somePropIncrement, sayHi
+  sayHi
 } from './MasterDetailSlice';
 
 export function Master() {
@@ -10,10 +10,6 @@ export function Master() {
   return (
     <div>
       <div>
-        <button
-          onClick={() => dispatch(somePropIncrement())}>
-          Some Prop
-        </button>
         <button
           onClick={() => dispatch(sayHi())}>
           Say Hi

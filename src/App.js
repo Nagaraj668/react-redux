@@ -1,14 +1,14 @@
 import React from 'react';
-import { Master } from './features/counter/Master';
-import { Detail } from './features/counter/Detail';
 import './App.css';
+import MasterClass from './features/counter/MasterClass';
+import DetailClass from './features/counter/DetailClass';
 
 function App() {
   return (
     <div>
-      <Master />
+      <MasterClass />
       <hr />
-      <Detail />
+      <DetailClass />
     </div>
   );
 }
