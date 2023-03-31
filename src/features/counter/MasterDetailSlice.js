@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export const reduxSlice = createSlice({
-  name: "counter1",
+  name: "counters",
   initialState: {
     chatData: []
   },
   reducers: {
-    sayHi: (state) => {
-      state.chatData.push("hi")
+    sayHi: (state, action) => {
+      state.chatData.push(action.payload)
     }
   }
 });

@@ -11,7 +11,7 @@ export function Master() {
     <div>
       <div>
         <button
-          onClick={() => dispatch(sayHi())}>
+          onClick={() => dispatch(sayHi((new Date().toString())))}>
           Say Hi
         </button>
       </div>
