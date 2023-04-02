@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import {
-  sayHi
+  sayHi, sayBye
 } from './MasterDetailSlice';
 
 export function Master() {
@@ -10,9 +10,13 @@ export function Master() {
   return (
     <div>
       <div>
-        <button
-          onClick={() => dispatch(sayHi((new Date().toString())))}>
+      <button
+          onClick={() => dispatch(sayHi("Hi: " + (new Date().toString())))}>
           Say Hi
+        </button>
+        <button style={{marginLeft:'5px'}}
+          onClick={() => dispatch(sayBye("Bye: " + (new Date().toString())))}>
+          Say Bye
         </button>
       </div>
     </div>
