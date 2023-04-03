@@ -11,11 +11,19 @@ export function Master() {
     <div>
       <div>
       <button
-          onClick={() => dispatch(sayHi("Hi: " + (new Date().toString())))}>
+          onClick={() => {
+            let date = new Date().toString()
+            date = date.replace(" GMT+0530 (India Standard Time)", "")
+            dispatch(sayHi("Hi: " + date))
+          }}>
           Say Hi
         </button>
         <button style={{marginLeft:'5px'}}
-          onClick={() => dispatch(sayBye("Bye: " + (new Date().toString())))}>
+          onClick={() => {
+            let date = new Date().toString()
+            date = date.replace(" GMT+0530 (India Standard Time)", "")
+            dispatch(sayBye("Bye: " + date))
+          }}>
           Say Bye
         </button>
       </div>
