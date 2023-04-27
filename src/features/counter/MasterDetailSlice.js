@@ -16,5 +16,5 @@ export const reduxSlice = createSlice({
 });
 
 export const { sayHi, sayBye } = reduxSlice.actions;
-export const selectChatData = (state) => state.counter.chatData;
+export const selectChatData = (state) => state.someReducer.chatData;
 export default reduxSlice.reducer;
