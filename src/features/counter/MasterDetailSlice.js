@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export const reduxSlice = createSlice({
-  name: "someName",
+  name: "hello",
   initialState: {
     chatData: []
   },
@@ -16,5 +16,5 @@ export const reduxSlice = createSlice({
 });
 
 export const { sayHi, sayBye } = reduxSlice.actions;
-export const selectChatData = (state) => state.someReducer.chatData;
+export const selectChatData = (state) => state.hello.chatData;
 export default reduxSlice.reducer;

@@ -26,6 +26,8 @@ export function Master() {
           }}>
           Say Bye
         </button>
+
+
       </div>
     </div>
   );
